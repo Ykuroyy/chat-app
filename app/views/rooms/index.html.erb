@@ -1,7 +1,8 @@
 <div class="rooms">
   <% current_user.rooms.each do |room| %>
     <div class="room">
-      <%= render "messages/side_bar", room: room %>
+      <%= render partial: "messages/side_bar", locals: { room: room } %> 
+      <%# <%= render "messages/side_bar", room: room %> %>
     </div>
   <% end %>
 </div>
