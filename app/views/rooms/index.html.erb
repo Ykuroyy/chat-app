@@ -1,5 +1,7 @@
-<div class='wrapper'>
-  <div class='side-bar'>
-    <%= render "messages/side_bar" %>
-  </div>
+<div class="rooms">
+  <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <%= render "messages/side_bar", room: room %>
+    </div>
+  <% end %>
 </div>
