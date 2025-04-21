@@ -1,8 +1,7 @@
-
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-      <%= room.name %>
+      <%= @room.name%>
     </div>
   </div>
   <div class="right-header">
@@ -26,6 +25,5 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
-
 
 
